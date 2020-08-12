@@ -18,18 +18,37 @@ namespace HelloWorldMVCWebApp._00Data
         public string PublisherTitle { get; set; }
         public string Author { get; set; }
 
+
+       // [Required]
+        //[DataType(DataType.Date)]
+        //[Display(Name ="")]
+       // public DateTime dataPublished { get; set; }
     }
 
-   /* public class Author
+    public class Computer
     {
 
-        public int BookId { get; set; }
+        public int ComputerId { get; set; }
         [StringLength(50)]
         [Required]
 
         public string Title { get; set; }
-        public string AuthorX { get; set; }
 
-    }*/
+        public string PublisherTitle { get; set; }
+        public string Author { get; set; }
+
+    }
+
+    /* public class Author
+     {
+
+         public int BookId { get; set; }
+         [StringLength(50)]
+         [Required]
+
+         public string Title { get; set; }
+         public string AuthorX { get; set; }
+
+     }*/
 }
 

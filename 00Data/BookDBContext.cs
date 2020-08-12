@@ -15,6 +15,6 @@ namespace HelloWorldMVCWebApp._00Data
         }
 
         public DbSet<Book> Books {get; set;}
-
+        public DbSet<Computer> Computers { get; set;}
     }
 }

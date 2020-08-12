@@ -6,7 +6,7 @@ namespace HelloWorldMVCWebApp.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            MigrationBuilder.AddColumn<string>(
+            migrationBuilder.AddColumn<string>(
                 name: "PublisheTitle",
                 table: "Books",
                 nullable: true);
@@ -14,10 +14,9 @@ namespace HelloWorldMVCWebApp.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            MigrationBuilder.DropColumn<string>(
+            migrationBuilder.DropColumn(
                 name: "PublisheTitle",
-                table: "Books",
-                nullable: true);
+                table: "Books");
         }
     }
 }
